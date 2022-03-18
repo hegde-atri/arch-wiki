@@ -2,7 +2,10 @@
 
 You can change dns multiple ways.
 
-One way to test if your changes have taken place if you have systemd-resolve: `systemd-resolve --status`. It will list the DNS servers associated to each connection.
+Testing if your changes have taken place:
+
+- `resolvectl status`
+- if you have systemd-resolve: `systemd-resolve --status`. It will list the DNS servers associated to each connection.
 
 ## Systemd-resolve
 
@@ -13,9 +16,22 @@ Check if you have systemd-resolve installed by running `systemd-resolve --versio
 
 An example of it: `sudo systemd-resolve --interface wl01 --set-dns 9.9.9.9`.
 
+You can also create a bash script that does this and set it to autorun on startup in your KDE system settings page. Here's what my startup.sh would look like:
+
+```sh
+#!bin/bash
+
+sudo systemd-resolve --interface wlo1 --set-dns 192.168.1.3
+```
+
 ## KDE-plasma system settings
 
 - In system settings, go to the connections page.
 - Click on your connection, head over to the IPv4 tab.
 - Set method to `Automatic (Only addresses)`.
 - In the DNS servers, box enter your dns. E.g. `9.9.9.9`.
+
+## Editing resolv.conf
+
+- Open a terminal
+- `sudo micro /etc/resolv.conf` and add your dns server/s like this: `nameserver 9.9.9.9`

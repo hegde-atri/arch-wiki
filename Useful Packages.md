@@ -2,6 +2,14 @@
 
 These are some packages that I use day to day.
 
+## Getting bluetooth working
+
+TODO
+
+## Wallpapers
+
+Ignis wallpapers from the 'Get new wallpapers' store.
+
 ## Multimedia
 
 ### mpv + svp
