@@ -7,6 +7,8 @@ Testing if your changes have taken place:
 - `resolvectl status`
 - if you have systemd-resolve: `systemd-resolve --status`. It will list the DNS servers associated to each connection.
 
+Make sure that you do not use more than one way 
+
 ## Systemd-resolve
 
 Check if you have systemd-resolve installed by running `systemd-resolve --version`. If you do not have it install it using your package manager `yay -S systemd-resolvconf`
@@ -35,3 +37,4 @@ sudo systemd-resolve --interface wlo1 --set-dns 192.168.1.3
 
 - Open a terminal
 - `sudo micro /etc/resolv.conf` and add your dns server/s like this: `nameserver 9.9.9.9`
+

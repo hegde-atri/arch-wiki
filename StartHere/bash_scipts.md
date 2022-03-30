@@ -1,6 +1,5 @@
 # Get started by making shell scripts!
-This is a basic guide to get started on making your own scripts.
-First I lets look at some examples to see what we could expect.
+Basic shell script examples.
 
 The first script takes your height and appends to a heigh tracking markdown file.
 
@@ -15,6 +14,7 @@ echo "| $currentDate | $height |" >> ~/Documents/heightLogger.md
 ```
 
 Or we could have it take one argument
+
 ```sh
 #!/usr/bin/bash
 currentDate=`date +"%d/%m/%Y"`
@@ -23,6 +23,7 @@ echo "| $currentDate | $1 |" >> ~/Documents/heightLogger.md
 ```
 
 Now we can add some additional checks to it
+
 ```sh
 #!/usr/bin/bash
 
@@ -34,4 +35,5 @@ else
 	echo "| $currentDate | $1 |" >> ~/Documents/heightLogger.md
 fi
 ```
-TODO finish page
+
+
