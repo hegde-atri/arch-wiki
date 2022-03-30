@@ -1,4 +1,4 @@
-# How to listen too and manage your music.
+# How to listen to and manage your music.
  Simple guide to manage your music more efficiently.
  
 ## Spotify users
@@ -108,7 +108,13 @@ proxy = "http://proxy.example.org:8080"
 # a_v_r (Audio/Video Receiver), s_t_b (Set-Top Box), and audio_dongle.
 device_type = "speaker"
 ```
+
   For more information visit the [spotifyd repository](https://github.com/Spotifyd/spotifyd), and their documentation [here](https://github.com/Spotifyd/spotifyd/tree/master/docs/src).
+
 ## Music videos
-I like storing some music as their music videos found on sites such as YouTube. I just use vlc play my playlists. You can also hide the vlc window to the toolbar as an icon which is also useful. How the VLC playlist view looks:
-![[VLCPlaylistView.png]]
+
+I like storing some music as their music videos found on sites such as YouTube. I just use vlc play my playlists. You can also hide the vlc window to the toolbar as an icon which is also useful.
+
+How the VLC playlist view looks:
+
+![VLC playlist view](Assets/VLCPlaylistView.png)

@@ -1,6 +1,8 @@
 # archlinux-help-sheet
 
 This guide was made to help the community and myself.
+Start the guide from the [StartHere folder](StartHere/gettingStarted.md)
+
 
 ## Contributing
 

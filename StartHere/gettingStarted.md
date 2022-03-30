@@ -12,21 +12,25 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 ```
+
 I also use flatpak for some of my application which can be installed using:
+
 ```sh
 sudo pacman -S flatpak
 ```
+
 and then restart your system
 
 ## Changing your terminal and shell
 
 My choice of terminal emulator would be kitty. I primarily have bash installed, but I recommend using fish for beginners
+
 ```sh
 yay -S kitty fish
 ```
 
 To change your default shell to fish
-```
+
+```sh
 chsh -s `which fish`
 ```
-
