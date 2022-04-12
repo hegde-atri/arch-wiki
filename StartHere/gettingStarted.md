@@ -34,3 +34,7 @@ To change your default shell to fish
 ```sh
 chsh -s `which fish`
 ```
+
+## Dual booting
+
+`powercfg /h off` - Run this command (in windows) to disable hibernatition completely. This gets rid of hybrid boot, which can cause your hard drive to be read-only.

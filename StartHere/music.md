@@ -1,6 +1,6 @@
 # How to listen to and manage your music.
  Simple guide to manage your music more efficiently.
- 
+
 ## Spotify users
 For streaming spotify, I use spotifyd + spotify-tui, which does require spotify premium
 If you prefer using the normal spotify app, it is available on the AUR
