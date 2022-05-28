@@ -1,7 +1,9 @@
 # archlinux-help-sheet
 
-This guide was made to help the community and myself.
-Start the guide from the [StartHere folder](StartHere/gettingStarted.md)
+Guide is going over some major reworking as I have a much deeper understanding of arch linux, but also noticed quite a few typos.
+Updating the page will take some time due to me having a busy schedule!
+
+Guide will now be hosted using github pages [here](https://hegde-atri.github.io/archlinux-help-sheet/),
 
 ## Contributing
 
