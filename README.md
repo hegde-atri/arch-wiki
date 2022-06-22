@@ -1,9 +1,8 @@
 # archlinux-help-sheet
 
-Guide is going over some major reworking as I have a much deeper understanding of arch linux, but also noticed quite a few typos.
-Updating the page will take some time due to me having a busy schedule!
+This guide will be going through a major transformation, and will be on my website to read [here](https://hegdeatri.com/projects/arch-wiki/)
 
-Guide will now be hosted using github pages [here](https://hegde-atri.github.io/archlinux-help-sheet/),
+Also on github pages [here](https://hegde-atri.github.io/archlinux-help-sheet/),
 
 ## Contributing
 
