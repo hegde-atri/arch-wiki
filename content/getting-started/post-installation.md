@@ -141,3 +141,27 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export AWT_TOOLKIT=MToolkit
 wmname LG3D
 ```
+
+## Bluetooth
+
+If you use any bluetooth peripherals you will need to enable bluetooth. Lets first check
+if the bluetooth kernel module, `btusb` is loaded.
+```sh
+lsmod | grep "btusb"
+```
+If you do not see `btusb` after running this command, you will need to load the module using 
+```sh
+modprobe btusb
+```
+
+Now let us install the some packages
+```sh
+sudo pacman -S bluez bluez-utils
+```
+After installing bluez, we can enable the bluetooth service
+```sh
+sudo systemctl enable bluetooth.service
+```
+Now you can restart your computer, and you `bluetoothctl` from your terminal to use bluetooth.
+If you want a graphical manager you will want to install the `blueman` package.
+
