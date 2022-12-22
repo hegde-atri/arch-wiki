@@ -1,0 +1,6 @@
+#!/bin/sh
+rm -rf book.bak
+mv book book.bak
+mdbook build
+cp -r .vercel book/.vercel
+vc deploy book --prod

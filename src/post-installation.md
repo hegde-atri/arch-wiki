@@ -11,9 +11,20 @@ is running by using the command `sudo systemctl status NetworkManager`. If it is
 To connect to a wifi network using NetworkManager have a look at the 
 [Network Manager page](./network-manager.html)
 
+
+## Configuring Pacman
+Pacman can be quite slow when update/installing packages, and you might find that some applications
+are missing when you try to install them??
+
+### Enabling Parallel Downloads
+
+### Enabling multilib repository
+This repository contains 32-bit applications.
+
 ## Making sure you have the packages you want
 
 Sometimes you might've missed a package that gives you core functionaly you require. So 
 here is a list of packages I always install.
 
 TODO: complete list
+

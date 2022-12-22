@@ -19,4 +19,5 @@
   - [Flatpak](./apps/flatpak.md)
   - [AppImages](./apps/appimages.md)
   - [Windows apps](./apps/bottles.md)
+- [Terminal basics](./terminal-basics.md)
 - [Shell Scripting](./shell-scripts.md)

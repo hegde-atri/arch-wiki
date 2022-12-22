@@ -4,3 +4,8 @@ language = "en"
 multilingual = false
 src = "src"
 title = "ArchLinux wiki"
+description = "A guide to getting started with Arch Linux"
+
+[output.html]
+git-repository-url = "https://github.com/hegde-atri/arch-wiki/tree/main"
+edit-url-template = "https://github.com/hegde-atri/arch-wiki/tree/main/{path}"
