@@ -1,3 +1,22 @@
 # Summary
 
-- [Chapter 1](./chapter_1.md)
+[Introduction](../README.md)
+
+- [Installation](./installation.md)
+- [Post Installation](./post-installation.md)
+  - [Wayland](./post-installation-wayland.md)
+- [AUR helper](./paru.md)
+- [Network Manager](./network-manager.md)
+- [Services](./services.md)
+- [Vim](./vim.md)
+- [Emacs](./emacs.md)
+- [Config Folder](./config/index.md)
+  - [Hyprland](./config/hyprland.md)
+  - [Kitty](./config/kitty.md)
+- [Dotfiles](./dotfiles.md)
+- [Installing Applications](./apps/index.md)
+  - [Paru](./apps/paru.md)
+  - [Flatpak](./apps/flatpak.md)
+  - [AppImages](./apps/appimages.md)
+  - [Windows apps](./apps/bottles.md)
+- [Shell Scripting](./shell-scripts.md)
