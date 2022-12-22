@@ -26,6 +26,7 @@ jobs:
 
       - name: Deploy static content to Vercel
         run: |
+          vercel --version
           productionFlag=""
           if [[ ${GITHUB_REF} == "refs/heads/main" ]]; then
             productionFlag="--prod"
