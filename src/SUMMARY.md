@@ -24,5 +24,7 @@
 - [Shell Scripting](./shell-scripts.md)
 - [Snippets](./snippets/index.md)
   - [Installing different kernels](./snippets/kernels.md)
+  - [Virtual Machines](./snippets/vm-qemu.md)
   - [NVIDIA](./snippets/nvidia.md)
   - [Youtubedl](./snippets/yt-dlp.md)
+- [Ricing](./ricing.md)
