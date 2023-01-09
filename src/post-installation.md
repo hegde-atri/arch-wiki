@@ -11,20 +11,59 @@ is running by using the command `sudo systemctl status NetworkManager`. If it is
 To connect to a wifi network using NetworkManager have a look at the 
 [Network Manager page](./network-manager.html)
 
+```admonish info
+We will be modifying configuration files from the command line using the tool VIM.
+You can learn the basics by VIM by reading the [VIM page](./vim.md).
+```
+
+## `.bashrc`
+
+When we are using the terminal we are usually interacting with a shell inside of a terminal emulator.
+When we open the shell, it loads its "configuration" from the file `~/.bashrc`. In here we can set
+command shortcuts to improve our work flow.
+
+```admonish example
+Updating our computer using pacman usually is done using `pacman -Syuu`
+We can simplify it to update, by adding `alias update='pacman -Syuu' in our ~/.bashrc file.`
+```
+
 
 ## Configuring Pacman
-Pacman can be quite slow when update/installing packages, and you might find that some applications
-are missing when you try to install them??
+
+Now lets configure pacman so it is more perfomant and readable.
 
 ### Enabling Parallel Downloads
 
+This will usually significantly improve download times when using pacman.
+Lets open the file `/etc/pacman.conf` with root priviledges.
+```sh
+sudo vim /etc/pacman.conf
+```
+
+Now find this line. (using [vim](./vim.md))
+```
+#ParallelDownloads...
+```
+
+and replace it with
+```
+ParallelDownloads = 15
+```
+
 ### Enabling multilib repository
-This repository contains 32-bit applications.
 
-## Making sure you have the packages you want
+This repository contains 32-bit applications. Includes applications such as steam.
+To enable this, uncomment the following lines in `/etc/pacman.conf` (root permission required)
+```
+#[multilib]
+#Include = /etc/pacman.d/mirrorlist
+```
 
-Sometimes you might've missed a package that gives you core functionaly you require. So 
-here is a list of packages I always install.
+Now you will need to update pacman's database by running
+```
+sudo pacman -Sy
+```
 
-TODO: complete list
+### Enabling color output
 
+This will enable colour ouput which will be helpful for our [AUR Helper](./paru.md) paru.
