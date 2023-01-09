@@ -24,7 +24,7 @@ command shortcuts to improve our work flow.
 
 ```admonish example
 Updating our computer using pacman usually is done using `pacman -Syuu`
-We can simplify it to update, by adding `alias update='pacman -Syuu' in our ~/.bashrc file.`
+We can simplify it to update, by adding `alias update='pacman -Syu' in our ~/.bashrc file.`
 ```
 
 
