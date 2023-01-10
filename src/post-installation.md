@@ -55,8 +55,8 @@ ParallelDownloads = 15
 This repository contains 32-bit applications. Includes applications such as steam.
 To enable this, uncomment the following lines in `/etc/pacman.conf` (root permission required)
 ```
-#[multilib]
-#Include = /etc/pacman.d/mirrorlist
+[multilib]
+Include = /etc/pacman.d/mirrorlist
 ```
 
 Now you will need to update pacman's database by running
