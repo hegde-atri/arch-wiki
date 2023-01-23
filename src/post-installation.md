@@ -23,8 +23,8 @@ When we open the shell, it loads its "configuration" from the file `~/.bashrc`. 
 command shortcuts to improve our work flow.
 
 ```admonish example
-Updating our computer using pacman usually is done using `pacman -Syuu`
-We can simplify it to update, by adding `alias update='pacman -Syu' in our ~/.bashrc file.`
+Updating our computer using pacman usually is done using `pacman -Syu`
+We can simplify it to update, by adding `alias update='pacman -Syu'` in our `~/.bashrc` file.
 ```
 
 
@@ -67,3 +67,5 @@ sudo pacman -Sy
 ### Enabling color output
 
 This will enable colour ouput which will be helpful for our [AUR Helper](./paru.md) paru.
+To enable this, we will need to uncomment `Color` from `/etc/pacman.conf`. (root permission required)
+

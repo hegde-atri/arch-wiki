@@ -59,15 +59,19 @@ NewsOnUpgrade
 
 Just running the command `paru` will do a full system update.
 
-You can search for packages by running `paru <package-name>`.
+#### Searching packages
 
-If you know the name of the package you want to install, you can install it using
-`paru -S <package-name>`.
+You can search for packages by running `paru <package-name>`.
 
 ~~~admonish info
 When you search for packages using `paru` you can see what repostiory they are coming from.
 Such as community, extra, core, multilib, AUR.
 ~~~
+
+#### Installing packages
+
+If you know the name of the package you want to install, you can install it using
+`paru -S <package-name>`.
 
 ## Validating AUR packages.
 

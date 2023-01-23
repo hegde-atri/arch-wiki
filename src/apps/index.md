@@ -22,6 +22,7 @@ and makes them available to applications.
 
 This is an system service that will manage your processor clocks based your battery status. A must for laptops! (useless on desktops).
 
+// TODO: walkthrough installation
 
 ### Firefox extensions
 
