@@ -8,3 +8,5 @@ In this directory lives all the configuration of installed applications. For exa
 your `neovim` configuration will be in `~/.config/neovim`.
 
 If you are using a TWM, you usually put you configuration in here.
+
+These are usually called [dotfiles](../dotfiles.md).

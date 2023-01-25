@@ -32,3 +32,8 @@ pacman -S git ripgrep fd
 git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.emacs.d
 ~/.emacs.d/bin/doom install
 ```
+
+## Emacs on wayland
+
+Native wayland emacs is coming with emacs 29, for now none of the emacs wayland AUR packages have worked for me.
+Therefore I have just stuck to `emacs-nativecomp`, but it does come with transparency glitches on wayland.

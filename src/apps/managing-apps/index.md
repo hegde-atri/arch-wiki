@@ -10,3 +10,5 @@ However sometimes this isn't the best solution due to various reasons.
 - Dependency breaking
 - You want to install an older version which isn't possible by `pacman`.
 
+The ideal solution would be something like `nix` package manager. But I would recommend trying out
+the alternatives first, as nix might be hard to understand for people new to linux package management.
