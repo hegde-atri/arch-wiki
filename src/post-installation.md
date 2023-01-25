@@ -16,6 +16,44 @@ We will be modifying configuration files from the command line using the tool VI
 You can learn the basics by VIM by reading the [VIM page](./vim.md).
 ```
 
+## PC Speaker
+
+To provide auditory cues, your motherboard usually comes with a simple speaker capable
+of producing beeps. This can be very loud and annoying when using the terminal, as it
+might beep quite often. To test if you have this problem, just press `<TAB>` multiple
+after logging in, if you hear a beep and want to remove perform the following actions.
+
+### Non-Persistant solution
+
+We can disable it by unloading the `pcspkr` and `snd_pcsp` kernel modules.
+
+```sh
+rmmod pcspkr
+rmmod snd_pcsp
+```
+
+### Persistant solution
+
+There are two easy ways of persisting this change.
+
+#### Blacklisting modules
+
+You can blacklist the modules to prevent them from being loaded at boot.
+Either by adding `module_blacklist=pcspkr,snd_pcsp` in our bootloaders kernel line.
+(This is <i>"advanced"</i> and will require regenerating your grub config if you are using grub)
+
+or by creating the file `/etc/modprobe.d/nobeep.conf` (with root permissions) with the 
+following content.
+
+```conf
+blacklist pcspkr
+blacklist snd_pcsp
+```
+
+#### Console
+
+You can uncomment `set bell-style none` in `/etc/inputrc`. (require root permission)
+
 ## `.bashrc`
 
 When we are using the terminal we are usually interacting with a shell inside of a terminal emulator.
